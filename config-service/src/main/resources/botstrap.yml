@@ -6,7 +6,7 @@ spring:
       server:
         git:
           url: https://github.com/juankll2/microservicios_web.git
-          searchPath: config-data
+          searchPaths: config-data
           user: ${GIT_USER}
           password: ${GIT_PASSWORD}
   security:
