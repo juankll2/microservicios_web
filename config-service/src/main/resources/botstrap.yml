@@ -5,5 +5,12 @@ spring:
     config:
       server:
         git:
-          url:
+          url: https://github.com/juankll2/microservicios_web.git
+          searchPath: config-data
+          user: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+  security:
+    user:
+      name: root
+      password: s3cr3t
 
