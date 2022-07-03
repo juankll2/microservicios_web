@@ -4,6 +4,7 @@ spring:
   cloud:
     config:
       server:
+        bootstrap: true
         git:
           default-label: main
           uri: https://github.com/juankll2/microservicios_web.git
