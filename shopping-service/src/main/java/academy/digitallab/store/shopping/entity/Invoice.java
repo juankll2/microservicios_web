@@ -1,5 +1,7 @@
 package academy.digitallab.store.shopping.entity;
 
+import academy.digitallab.store.shopping.model.Customer;
+import academy.digitallab.store.shopping.model.Product;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
@@ -39,6 +41,12 @@ public class Invoice {
     private List<InvoiceItem> items;
 
     private String state;
+
+    @Transient
+    private Customer customer;
+
+    //@Transient
+    //private Product product;
 
     public Invoice(){
         items = new ArrayList<>();
