@@ -20,6 +20,7 @@ repositories {
 
 ext {
 	set('springCloudVersion', "2021.0.3")
+	set('springBootAdminVersion', "2.7.1")
 }
 
 dependencies {
@@ -33,6 +34,9 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 	implementation 'io.github.resilience4j:resilience4j-spring-boot2'
 
+	implementation 'de.codecentric:spring-boot-admin-starter-client'
+
+
 	//implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
@@ -43,6 +47,7 @@ dependencies {
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+		mavenBom "de.codecentric:spring-boot-admin-dependencies:${springBootAdminVersion}"
 	}
 }
 

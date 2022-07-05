@@ -8,6 +8,7 @@ import java.util.Collections;
 
 @SpringBootApplication
 @EnableEurekaClient
+
 public class CustomerServiceApplication {
 
 	public static void main(String[] args) {
